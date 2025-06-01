@@ -10,7 +10,7 @@ function AddBarang(){
     }
     const handleSubmit = e => {
         e.preventDefault();
-        fetch('http://192.168.1.12:3000/barang/addbarang' , {
+        fetch('https://8f83-140-0-202-203.ngrok-free.app/barang/addbarang' , {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(form)

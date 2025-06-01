@@ -11,7 +11,7 @@ function Barang() {
     }, []);
 
     const fetchBarangs = () => {
-        fetch('http://192.168.1.12:3000/')
+        fetch('https://8f83-140-0-202-203.ngrok-free.app/')
         .then((res) => {
             return res.json();
         })
