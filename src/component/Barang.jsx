@@ -11,7 +11,9 @@ function Barang() {
     }, []);
 
     const fetchBarangs = () => {
-        fetch('https://8f83-140-0-202-203.ngrok-free.app/')
+        fetch('https://8f83-140-0-202-203.ngrok-free.app/' , {
+            headers: { 'Content-Type': 'application/json' }
+        })
         .then((res) => {
             return res.json();
         })
